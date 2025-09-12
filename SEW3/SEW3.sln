@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36414.22 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CS142_HerbariumLibrary", "..\CS142_HerbariumLibrary\CS142_HerbariumLibrary\CS142_HerbariumLibrary.csproj", "{D56B36AB-8465-0E09-1518-510E2DA7C18D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01_HerbariumConsole", "01_HerbariumConsole\01_HerbariumConsole.csproj", "{3CBD29BF-B52B-4686-A716-383EF2BD5023}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D56B36AB-8465-0E09-1518-510E2DA7C18D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D56B36AB-8465-0E09-1518-510E2DA7C18D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D56B36AB-8465-0E09-1518-510E2DA7C18D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D56B36AB-8465-0E09-1518-510E2DA7C18D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3CBD29BF-B52B-4686-A716-383EF2BD5023}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CBD29BF-B52B-4686-A716-383EF2BD5023}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CBD29BF-B52B-4686-A716-383EF2BD5023}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CBD29BF-B52B-4686-A716-383EF2BD5023}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {ECE7DDA4-CF7B-4391-BDEE-0AC1C9FFFF9A}
+	EndGlobalSection
+EndGlobal
