@@ -63,7 +63,7 @@ namespace FJHerbariumLibrary
             {
                 if (!plant.Id.HasValue)
                     throw new ArgumentException("Plant.Id is null");
-                string idAsString = plant.Id.Value.ToString("D4");
+                string idAsString = plant.Id.Value.ToString("D3");
                 int indexOfImage = 1;
                 while(true)
                 {
