@@ -9,7 +9,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\CS142_HerbariumLibrary\CS142_HerbariumLibrary\CS142_HerbariumLibrary.csproj" />
     <ProjectReference Include="..\CS142_HerbariumLibrary\CS142_HerbariumLibrary.csproj" />
   </ItemGroup>
 
