@@ -1,11 +1,16 @@
 ﻿using DocumentFormat.OpenXml.Packaging;
 using DocumentFormat.OpenXml.Presentation;
+using DocumentFormat.OpenXml.Vml;
+using MetadataExtractor;
+using MetadataExtractor.Formats.Exif;
 using System.Text;
 using System.Xml.Linq;
 using BlipFill = DocumentFormat.OpenXml.Presentation.BlipFill;
+using Directory = System.IO.Directory;
 using NonVisualDrawingProperties = DocumentFormat.OpenXml.Presentation.NonVisualDrawingProperties;
 using NonVisualGroupShapeDrawingProperties = DocumentFormat.OpenXml.Presentation.NonVisualGroupShapeDrawingProperties;
 using NonVisualGroupShapeProperties = DocumentFormat.OpenXml.Presentation.NonVisualGroupShapeProperties;
+using Path = System.IO.Path;
 using Picture = DocumentFormat.OpenXml.Presentation.Picture;
 using Shape = DocumentFormat.OpenXml.Presentation.Shape;
 using ShapeProperties = DocumentFormat.OpenXml.Presentation.ShapeProperties;
@@ -63,18 +68,22 @@ namespace FJHerbariumLibrary
             {
                 if (!plant.Id.HasValue)
                     throw new ArgumentException("Plant.Id is null");
-                string idAsString = plant.Id.Value.ToString("D3");
-                int indexOfImage = 1;
-                while(true)
+                string idAsString = plant.Id.Value.ToString("D3");                
+                string[] extensions = { ".jpg", ".jpeg", ".png", ".gif" };
+                foreach (string ext in extensions)
                 {
-                    string pathToImage = Path.Combine(pathToImages, $"{idAsString}_{indexOfImage}.jpg");
-                    if (!File.Exists(pathToImage))
+                    int indexOfImage = 1;
+                    while (true)
                     {
-                        break;
+                        string pathToImage = Path.Combine(pathToImages, $"{idAsString}_{indexOfImage}{ext}");
+                        if (!File.Exists(pathToImage))
+                        {
+                            break;
+                        }
+                        plant.Images.Add(pathToImage);
+                        indexOfImage++;
                     }
-                    plant.Images.Add(pathToImage);
-                    indexOfImage++;
-                }                
+                }
             }            
         }       
 
@@ -228,23 +237,67 @@ namespace FJHerbariumLibrary
             // 2. Alten TextBody entfernen
             placeholderShape.TextBody?.Remove();
 
+            int rotation = 0;
+            ImagePart imagePart;
             // 3. Bild als ImagePart hinzufügen
-            ImagePart imagePart = slidePart.AddImagePart(ImagePartType.Jpeg);
-            using (var stream = File.OpenRead(pathToImage))
+            if (pathToImage.EndsWith(".jpg")  || pathToImage.EndsWith(".jpeg"))
+            {                
+                var directories = MetadataExtractor.ImageMetadataReader.ReadMetadata(pathToImage);
+                ExifIfd0Directory? exifIfd0 = directories.OfType<ExifIfd0Directory>().FirstOrDefault();                
+                int orientation = 0;
+
+                if (exifIfd0 != null && exifIfd0.ContainsTag(ExifDirectoryBase.TagOrientation))
+                {
+                    orientation = exifIfd0.GetInt32(ExifDirectoryBase.TagOrientation);
+                }
+
+                switch (orientation)
+                {
+                    case 1 or 2:
+                        rotation = 0;
+                        // Normal, nichts tun
+                        break;
+                    case 3 or 4:
+                        rotation = 180;
+                        break;
+                    case 5 or 6:
+                        rotation = 90;
+                        break;
+                    case 7 or 8:
+                        rotation = 270;
+                        break;
+                    default:
+                        // Unbekannte Orientation, nichts tun
+                        break;
+                }
+                imagePart = slidePart.AddImagePart(ImagePartType.Jpeg);
+
+            } else if(pathToImage.EndsWith(".png"))
             {
-                imagePart.FeedData(stream);
+                imagePart = slidePart.AddImagePart(ImagePartType.Png);
+            } else if(pathToImage.EndsWith(".gif"))
+            {
+                imagePart = slidePart.AddImagePart(ImagePartType.Gif);
+            } else
+            {
+                imagePart = slidePart.AddImagePart(ImagePartType.Bmp);
             }
+
+                using (var stream = File.OpenRead(pathToImage))
+                {
+                    imagePart.FeedData(stream);
+                }
 
             string rId = slidePart.GetIdOfPart(imagePart);
 
             // 4. Position und Größe vom Originalplaceholder übernehmen
             var off = placeholderShape.ShapeProperties?.Transform2D?.Offset ?? new DocumentFormat.OpenXml.Drawing.Offset() { X = 0, Y = 0 };
-            var ext = placeholderShape.ShapeProperties?.Transform2D?.Extents ?? new DocumentFormat.OpenXml.Drawing.Extents() { Cx = 1000000, Cy = 1000000 };
+            var ext = placeholderShape.ShapeProperties?.Transform2D?.Extents ?? new DocumentFormat.OpenXml.Drawing.Extents() { Cx = 1000000, Cy = 1000000 };            
 
             // 5. NonVisualPictureProperties erstellen
             var nvPicPr = new NonVisualPictureProperties(
                 new NonVisualDrawingProperties() { Id = placeholderShape.NonVisualShapeProperties?.NonVisualDrawingProperties?.Id ?? 2U, Name = "Bild" },
-                new NonVisualPictureDrawingProperties(new DocumentFormat.OpenXml.Drawing.PictureLocks() { NoChangeAspect = true }),
+                new NonVisualPictureDrawingProperties(new DocumentFormat.OpenXml.Drawing.PictureLocks() { NoChangeAspect = false }),
                 new ApplicationNonVisualDrawingProperties()
             );
 
@@ -273,7 +326,8 @@ namespace FJHerbariumLibrary
                 new DocumentFormat.OpenXml.Drawing.Transform2D(
                     new DocumentFormat.OpenXml.Drawing.Offset() { X = off.X, Y = off.Y },
                     new DocumentFormat.OpenXml.Drawing.Extents() { Cx = ext.Cx, Cy = ext.Cy }
-                ),
+                )
+                { Rotation = rotation * 60000},  // Rotation wird 60000stel angegeben --> 90 * 60000
                 new DocumentFormat.OpenXml.Drawing.PresetGeometry(
                     new DocumentFormat.OpenXml.Drawing.AdjustValueList()
                     )
