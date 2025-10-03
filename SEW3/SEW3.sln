@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CS142_HerbariumLibrary", "C
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02_Files", "02_Files\02_Files.csproj", "{742797C5-8F78-4220-9E32-13DB5E7921B8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03_Strings", "03_Strings\03_Strings.csproj", "{3C574A95-F286-445F-B5AF-71A16BDF73B0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03_1_String", "03_1_String\03_1_String.csproj", "{F883F65C-D79E-42DA-B37D-6A1C533338D9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{742797C5-8F78-4220-9E32-13DB5E7921B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{742797C5-8F78-4220-9E32-13DB5E7921B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{742797C5-8F78-4220-9E32-13DB5E7921B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C574A95-F286-445F-B5AF-71A16BDF73B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C574A95-F286-445F-B5AF-71A16BDF73B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C574A95-F286-445F-B5AF-71A16BDF73B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C574A95-F286-445F-B5AF-71A16BDF73B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F883F65C-D79E-42DA-B37D-6A1C533338D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F883F65C-D79E-42DA-B37D-6A1C533338D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F883F65C-D79E-42DA-B37D-6A1C533338D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F883F65C-D79E-42DA-B37D-6A1C533338D9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
