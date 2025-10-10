@@ -1,0 +1,61 @@
+001;Gemeines-Rispengras;Poa trivialis;Süßgräser;Poaceae;24.05.2025;Wald
+002;Raps;Brassica napus;Kreuzblütler;Brassicaceae;24.05.2025;Acker
+003;Große Brennnessel;Urtica dioica;Brennneselgewächse;Urticaceae;24.05.25;Wald
+004;Hirtentäschel;Caspsella bursa-pastoris;Kreuzblütler;Brassicaceae;24.05.2025;Feldweg
+005;Weißklee;Trifolium repens;Hülsenfrüchtler;Fabaceae;24.05.2025;Wiese
+006;Waldgerste;Hordelymus europaeus;Süßgräser;Poaceae;24.05.2025;Wald  
+007;Kleine Klette;Arctium minus;Korbblütler;Asteraceae;24.05.2025;Waldrand  
+008;Drüsiges Springkraut;Impatiensglandulifera;Balsaminengewächse;Balsaminaceae;24.05.2025;Wald  
+009;Ausgerandeter Hohlzahn;Galeopsis bifida;Lippenblütler;Lamiaceae;24.05.2025;Wald  
+010;Strahlenlose Kamille;Matricaria discoidea;Korbblütler;Asteraceae;24.05.2025;Wegrand  
+011;Mittelmeer-Brombeere;Rubus ulmifolius;Rosengewächse;Rosaceae;24.05.2025;Wald  
+012;Krauser Ampfer;Rumex crispus;Knöterichgewächse;Polygonaceae;24.05.2025;Feld  
+013;Spitzwegerich;Plantago lanceolata;Wegerichgewächse;Plantaginaceae;24.05.2025;Wiese  
+014;Scharfer Hahnenfuß;Ranunculus acris;Hahnenfußgewächse;Ranunculaceae;24.05.2025;Wiese  
+015;Rotklee;Trifolium pratense;Hülsenfrüchtler;Fabaceae;24.05.2025;Wiese  
+016;Wiesen-Rispengras;Poa pratensis agg.;Süßgräser;Poaceae;24.05.2025;Wiese  
+017;Weiche Trespe;Bromus hordeaceus;Süßgräser;Poaceae;24.05.2025;Feldrand  
+018;Wiesen-Fuchsschwanz;Alopecurus pratensis;Süßgräser;Poaceae;24.05.2025;Wiese  
+019;Scharfgarbe;Achillea millefolium;Korbblütler;Asteraceae;24.05.2025;Wiese  
+020;Steifhaariger Löwenzahn;Leontodon hispidus;Korbblütler;Asteraceae;24.05.2025;Wiese  
+021;Gewöhnliches Knäuelgras;Dactylis glomerata;Süßgräser;Poaceae;24.05.2025;Wiese  
+022;Wiesenschwingel;Festuca pratensis;Süßgräser;Poaceae;24.05.2025;Wiese  
+023;Weichweizen;Triticum aestivum;Süßgräser;Poaceae;24.05.2025;Acker  
+024;Riesenschachtelhalm;Equisetum telmateia;Schachtelhalmgewächse;Equisetaceae;24.05.2025;Acker 
+025;Acker-Kratzdistel;Cirsium arvense;Korbblütler;Asteraceae;24.05.2025;Acker  
+026;Vogelmiere;Stellaria media;Nelkengewächse;Caryophyllaceae;24.05.2025;Acker  
+027;Kriechendes Fingerkraut;Potentilla reptans;Rosengewächse;Rosaceae;24.05.2025;Wegrand  
+028;Echter Beinwell;Symphytum officinale;Raublattgewächse;Boraginaceae;24.05.2025;Feldrand  
+029;Mais;Zea mays;Süßgräser;Poaceae;24.05.2025;Acker  
+030;Feinblättriger Gänsefuß;Chenopodium ficifolium;Fuchsschwanzgewächse;Amaranthaceae;01.06.2025;Acker  
+031;Rettich;Raphanus sativus;Kreuzblütler;Brassicaceae;01.06.2025;Acker
+032;Dachtrespe;Bromus tectorum;Süßgräser;Poaceae;01.06.2025;Acker
+033;Ackersenf;Sinapis arvensis;Kreuzblütler;Brassicaceae;01.06.2025;Acker
+034;Leindotter;Camelina sativa;Kreuzblütler;Brassicaceae;01.06.2025;Acker
+035;Sojabohne;Glycine max;Hülsenfrüchtler;Fabaceae;01.06.2025;Acker
+036;Breitwegerich;Plantago major;Plantaginaceae;Plantaginaceae;01.06.2025;Wegrand
+037;Hühnerhirse;Echinochloa crus-galli;Süßgräser;Poaceae;01.06.2025;Acker
+038;Hornklee;Lotus corniculatus;Hülsenfrüchtler;Fabaceae;01.06.2025;Wiese
+039;Einjähriges Berufkraut;Erigeron annuus;Korbblütler;Asteraceae;01.06.2025;Wiese
+040;Wald-Zwenke;Brachypodium sylvaticum;Süßgräser;Poaceae;01.06.2025;Feldrand
+041;Löwenzahn;Taraxacum officinale;Korbblütler;Asteraceae;01.06.2025;Wiese
+042;Bartnelke;Dianthus barbatus;Nelkengewächse;Caryophyllaceae;01.06.2025;Garten
+043;Erdbeere;Fragaria vesca;Rosengewächse;Rosaceae;01.06.2025;Garten
+044;Knöterich;Persicaria lapathifolia;Knöterichgewächse;Polygonaceae;01.06.2025;Acker
+045;Wiesenlabkraut;Galium mollugo;Rubiaceae;Rubiaceae;01.06.2025;Wiese
+046;Wolliges Honiggras;Holcus lanatus;Süßgräser;Poaceae;01.06.2025;Wiese
+047;Bastard-Klee;Trifolium hybridum;Hülsenfrüchtler;Fabaceae;01.06.2025;Wiese
+048;Himbeere;Rubus idaeus;Rosengewächse;Rosaceae;01.06.2025;Garten
+049;Giersch;Aegopodium podagraria;Doldenblütler;Apiaceae;01.06.2025;Wald
+050;Kohldistel;Cirsium oleraceum;Korbblütler;Asteraceae;01.06.2025;Feuchtwiese
+051;Taubnessel;Lamium album;Lippenblütler;Lamiaceae;01.06.2025;Wegrand
+052;Wald-Simse;Scirpus sylvaticus;Sauergrasgewächse;Cyperaceae;01.06.2025;Feuchtwiese
+053;Hecken-Wicke;Vicia sepium;Hülsenfrüchtler;Fabaceae;01.06.2025;Feuchtwiese
+054;Storchschnabel;Geranium pratense;Storchschnabelgewächse;Geraniaceae;01.06.2025;Wiese
+055;Gemeiner Rainkohl;Aethusa cynapium;Doldenblütler;Apiaceae;01.06.2025;Acker
+056;Pfingstrose;Paeonia lactiflora;Pfingstrosengewächse;Paeoniaceae;01.06.2025;Garten
+057;Wiesen-Flockenblume;Centaurea jacea;Korbblütler;Asteraceae;01.06.2025;Wiese
+058;Nelkenwurz;Geum laciniatum;Rosengewächse;Rosaceae;01.06.2025;Waldrand
+059;Gänseblümchen;Bellis perennis;Korbblütler;Asteraceae;01.06.2025;Rasen
+060;Buchweizen;Fagopyrum esculentum;Knöterichgewächse;Polygonaceae;01.06.2025;Acker
+061;Luzerne;Medicago sativa;Hülsenfrüchtler;Fabaceae;01.06.2025;Acker
