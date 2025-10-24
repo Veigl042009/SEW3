@@ -1,11 +1,4 @@
 ﻿// See https://aka.ms/new-console-template for more information
-<<<<<<< HEAD
-<<<<<<< HEAD
-using _03_Strings;
-=======
->>>>>>> f01f42005f84526c54abc3d05d38c8e9f452e068
-=======
->>>>>>> f01f42005f84526c54abc3d05d38c8e9f452e068
 using static System.Net.Mime.MediaTypeNames;
 
 Console.WriteLine("Hello, World!");
@@ -66,27 +59,5 @@ while ((index = txt.IndexOf(search, index)) != -1)
 
 Console.WriteLine($"'{search}' kommt {count} mal im Text vor.");
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-Caesar caesar = new Caesar();
 
-Console.Write("Gib den Text ein: ");
-string text = Console.ReadLine();
-
-Console.Write("Gib den Schlüssel ein: ");
-int schluessel = int.Parse(Console.ReadLine());
-
-// Verschlüsseln
-string verschluesselt = caesar.Verschluesseln(text, schluessel);
-Console.WriteLine("Verschlüsselt: " + verschluesselt);
-
-// Entschlüsseln
-string entschluesselt = caesar.Entschluesseln(verschluesselt, schluessel);
-Console.WriteLine("Entschlüsselt: " + entschluesselt);
-=======
-
->>>>>>> f01f42005f84526c54abc3d05d38c8e9f452e068
-=======
-
->>>>>>> f01f42005f84526c54abc3d05d38c8e9f452e068
 
