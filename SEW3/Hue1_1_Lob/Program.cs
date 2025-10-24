@@ -27,5 +27,5 @@ for (int i = 0; i < anzahl; i++)
     else
         artikel = "der";
 
-    Console.WriteLine($"Du bist {artikel} {adj}e {nomen}");
+    Console.WriteLine($"Du bist {artikel} {adj} {nomen}");
 }
