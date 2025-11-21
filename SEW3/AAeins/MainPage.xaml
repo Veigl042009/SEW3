@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AAeins.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            <Editor x:Name="NotizEditor"
+                Placeholder="Geben Sie Ihre Notiz hier ein..."
+                AutoSize="TextChanges"
+                HeightRequest="200"/>
+
+            <HorizontalStackLayout Spacing="10">
+                <Button Text="Speichern" Clicked="SpeichernButton_Clicked"/>
+                <Button Text="Laden" Clicked="LadenButton_Clicked"/>
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
