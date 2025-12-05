@@ -1,4 +1,4 @@
-﻿namespace _11_TurtleWindowsFormen
+﻿namespace _12_Sierpinski
 {
     partial class Form1
     {
@@ -33,9 +33,9 @@
             // 
             // button1
             // 
-            button1.Location = new Point(27, 12);
+            button1.Location = new Point(72, 30);
             button1.Name = "button1";
-            button1.Size = new Size(75, 23);
+            button1.Size = new Size(102, 57);
             button1.TabIndex = 0;
             button1.Text = "button1";
             button1.UseVisualStyleBackColor = true;
@@ -49,6 +49,7 @@
             Controls.Add(button1);
             Name = "Form1";
             Text = "Form1";
+            Load += Form1_Load;
             ResumeLayout(false);
         }
 
