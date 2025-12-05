@@ -7,17 +7,19 @@ using System.Threading.Tasks;
 namespace _08_CallByReference
 {
     internal class Calculator
-    {
+    {       
+        // Methodenüberladung --> 3 Methoden mit gelichem Namen, unterscheiden sich anhand der Methodensignatur
         public static int CalculateDouble(int x)
         {
-            return x * 2;
+            int result = x * 2;
+            return result;
         }
 
-        public static void CalculateDoubleRef(int x, out int result)
+        public static void CalculateDouble(int x, out int result)
         {
             result = x * 2;
         }
-        public static void CalculateDoubleInRef(ref int x)
+        public static void CalculateDouble(ref int x)
         {
             x *= 2;
         }
