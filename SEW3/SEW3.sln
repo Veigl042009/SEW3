@@ -53,6 +53,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11_TurtleWindowsFormen", "1
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12_Sierpinski", "12_Sierpinski\12_Sierpinski.csproj", "{340C89E0-FA9D-4E4E-9764-0722E66E955D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "13_PasswordBruteForce", "13_PasswordBruteForce\13_PasswordBruteForce.csproj", "{6720A247-2308-4357-A5EB-41760B8E9549}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -163,6 +165,10 @@ Global
 		{340C89E0-FA9D-4E4E-9764-0722E66E955D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{340C89E0-FA9D-4E4E-9764-0722E66E955D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{340C89E0-FA9D-4E4E-9764-0722E66E955D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6720A247-2308-4357-A5EB-41760B8E9549}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6720A247-2308-4357-A5EB-41760B8E9549}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6720A247-2308-4357-A5EB-41760B8E9549}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6720A247-2308-4357-A5EB-41760B8E9549}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

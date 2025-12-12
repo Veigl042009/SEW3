@@ -1,4 +1,5 @@
 using Nakov.TurtleGraphics;
+using System;
 
 namespace _12_Sierpinski
 {
@@ -17,11 +18,11 @@ namespace _12_Sierpinski
         private void button1_Click(object sender, EventArgs e)
         {
             Turtle.PenSize = 2;
-            SPoint a = new SPoint(-200, -200);
-            SPoint b = new SPoint(200, -200);
-            SPoint c = new SPoint(0, 200);
+            SPoint a = new SPoint(-500, -500);
+            SPoint b = new SPoint(500, -500);
+            SPoint c = new SPoint(0, 500);
             STriangle t = new STriangle(a, b, c);
-            Sierpinski(5, t);
+            Sierpinski(6, t);
         }
 
         private void DrawTriangele(STriangle t)
@@ -36,7 +37,10 @@ namespace _12_Sierpinski
 
         }
 
-        private void Sierpinski(int level, STriangle t)
+        private void Sierpinski(int level, STriangle t)#
+
+
+
         {
             if (level == 0)
             {
@@ -44,9 +48,15 @@ namespace _12_Sierpinski
             }
 
             DrawTriangele(t);
-            STriangle innerTriangle = new STriangle(t.A, t.MidBC, t.MidCA); // linke kleine Dreieck
+            STriangle innerTriangle = new STriangle(t.A, t.MidAB, t.MidCA); // linke kleine Dreieck
+            Turtle.PenColor = Color.Red;
             Sierpinski(level - 1, innerTriangle);
             innerTriangle = new STriangle(t.B, t.MidAB, t.MidBC); // rechte kleine Dreieck
+            Turtle.PenColor = Color.Yellow;
+            Sierpinski(level - 1, innerTriangle);
+            innerTriangle = new STriangle(t.C, t.MidBC, t.MidCA); // obere kleine Dreieck
+            Turtle.PenColor = Color.Orange;
+            Sierpinski(level - 1, innerTriangle);
 
         }
     }
