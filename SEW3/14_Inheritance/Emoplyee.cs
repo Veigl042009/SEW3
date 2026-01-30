@@ -19,5 +19,9 @@ namespace _14_Inheritance
         {
             Console.WriteLine($"{firstName} {lastName} is working at the company '{companyName}'.");
         }
+        public new void GetInfo()           // override kennzeichnet, dass die Methode der Basisklasse überschrieben wird
+        {
+            Console.WriteLine($"{ firstName} { lastName} is an Employee");
+        }
     }
 }

@@ -26,5 +26,17 @@ namespace _14_Inheritance
         {
             Console.WriteLine($"{firstName} {lastName} is eating.");
         }
+
+        public virtual void GetInfo()           // virtual kennzeichnet, dass Methoden in abgeleiteten Klassen überschrieben werden können
+        {
+            Console.WriteLine($"{ firstName} { lastName} is a Person");
+        }
+
+        public override string ToString()
+        {
+            return $"Person: {firstName} {lastName}";
+        }
+
+
     }
 }

@@ -22,5 +22,9 @@ namespace _14_Inheritance
         {
             Console.WriteLine($"{firstName} {lastName} is working on the farm '{farmName}'.");
         }
+        public override void GetInfo()           // override kennzeichnet, dass die Methode der Basisklasse überschrieben wird
+        {
+            Console.WriteLine($"{ firstName} { lastName} is a Farmer");
+        }
     }
 }

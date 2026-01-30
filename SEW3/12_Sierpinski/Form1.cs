@@ -37,7 +37,7 @@ namespace _12_Sierpinski
 
         }
 
-        private void Sierpinski(int level, STriangle t)#
+        private void Sierpinski(int level, STriangle t)
 
 
 
