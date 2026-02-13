@@ -63,6 +63,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TokenAA", "TokenAA\TokenAA.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RekursionAA", "RekursionAA\RekursionAA.csproj", "{4A51D4C6-7193-4D50-822A-96F3FDAF24FC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "15_Delegates", "15_Delegates\15_Delegates.csproj", "{C3A2DA74-DBE7-46A5-BED5-17DFC3ED20B1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -193,6 +195,10 @@ Global
 		{4A51D4C6-7193-4D50-822A-96F3FDAF24FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4A51D4C6-7193-4D50-822A-96F3FDAF24FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4A51D4C6-7193-4D50-822A-96F3FDAF24FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3A2DA74-DBE7-46A5-BED5-17DFC3ED20B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3A2DA74-DBE7-46A5-BED5-17DFC3ED20B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3A2DA74-DBE7-46A5-BED5-17DFC3ED20B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3A2DA74-DBE7-46A5-BED5-17DFC3ED20B1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
