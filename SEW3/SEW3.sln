@@ -65,6 +65,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RekursionAA", "RekursionAA\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "15_Delegates", "15_Delegates\15_Delegates.csproj", "{C3A2DA74-DBE7-46A5-BED5-17DFC3ED20B1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hue8_Maut", "Hue8_Maut\Hue8_Maut.csproj", "{47440B74-8DF8-4CBA-AAAC-73119183E231}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -199,6 +201,10 @@ Global
 		{C3A2DA74-DBE7-46A5-BED5-17DFC3ED20B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C3A2DA74-DBE7-46A5-BED5-17DFC3ED20B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C3A2DA74-DBE7-46A5-BED5-17DFC3ED20B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47440B74-8DF8-4CBA-AAAC-73119183E231}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47440B74-8DF8-4CBA-AAAC-73119183E231}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47440B74-8DF8-4CBA-AAAC-73119183E231}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47440B74-8DF8-4CBA-AAAC-73119183E231}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
