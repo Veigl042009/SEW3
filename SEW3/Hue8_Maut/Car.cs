@@ -17,7 +17,7 @@ namespace Hue8_Maut
         public override double CalculateToll()
         {
             // Mautberechnung für Autos, z.B. basierend auf dem Gewicht
-            return 5.0 + (Weight * 0.01); // Beispiel: Grundgebühr + Gewichtszuschlag
+            return base.CalculateToll() + (Weight * 0.01); // Beispiel: Grundgebühr + Gewichtszuschlag
         }
 
 
