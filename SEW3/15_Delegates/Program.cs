@@ -6,13 +6,13 @@ Logger myLogger = new Logger();
 
 myLogger.LogReceived += ConsoleLogger;
 myLogger.LogReceived += FileLogger; // zusätzlich zum Konsolenlogger wird auch der FileLogger angemeldet
-myLogger.LogReceived += ConsoleLoggerEH;
+myLogger.LogReceivedEH += ConsoleLoggerEH;
 
 void ConsoleLoggerEH(object? sender, EventArgs e)
-{
-    if (e is LogEventArgs)
+{ 
+    if (e is LogEventArgs)  // Operator überprüft ob die VAriable von einem bestimmten Datentyp ist
     {
-        LogEventArgs lea = (LogEventArgs)e;
+        LogEventArgs lea = (LogEventArgs)e; // Cast
         Console.WriteLine(lea.Message, lea.Priority);
     }
     

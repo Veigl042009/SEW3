@@ -67,6 +67,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "15_Delegates", "15_Delegate
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hue8_Maut", "Hue8_Maut\Hue8_Maut.csproj", "{47440B74-8DF8-4CBA-AAAC-73119183E231}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "16_FuncAction", "16_FuncAction\16_FuncAction.csproj", "{C5EFA41C-7FDF-407C-A9A3-BD014749B3AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "17_Sensor", "17_Sensor\17_Sensor.csproj", "{ACE1FA94-1B20-4EEE-A966-39BA671E3EB7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -205,6 +209,14 @@ Global
 		{47440B74-8DF8-4CBA-AAAC-73119183E231}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{47440B74-8DF8-4CBA-AAAC-73119183E231}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{47440B74-8DF8-4CBA-AAAC-73119183E231}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5EFA41C-7FDF-407C-A9A3-BD014749B3AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5EFA41C-7FDF-407C-A9A3-BD014749B3AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5EFA41C-7FDF-407C-A9A3-BD014749B3AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5EFA41C-7FDF-407C-A9A3-BD014749B3AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ACE1FA94-1B20-4EEE-A966-39BA671E3EB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACE1FA94-1B20-4EEE-A966-39BA671E3EB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ACE1FA94-1B20-4EEE-A966-39BA671E3EB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACE1FA94-1B20-4EEE-A966-39BA671E3EB7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
