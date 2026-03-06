@@ -71,6 +71,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "16_FuncAction", "16_FuncAct
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "17_Sensor", "17_Sensor\17_Sensor.csproj", "{ACE1FA94-1B20-4EEE-A966-39BA671E3EB7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "18_Exceptions", "18_Exceptions\18_Exceptions.csproj", "{42DBC2DB-0A04-4705-816E-E2E399E52273}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -217,6 +219,10 @@ Global
 		{ACE1FA94-1B20-4EEE-A966-39BA671E3EB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ACE1FA94-1B20-4EEE-A966-39BA671E3EB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ACE1FA94-1B20-4EEE-A966-39BA671E3EB7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42DBC2DB-0A04-4705-816E-E2E399E52273}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42DBC2DB-0A04-4705-816E-E2E399E52273}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42DBC2DB-0A04-4705-816E-E2E399E52273}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42DBC2DB-0A04-4705-816E-E2E399E52273}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

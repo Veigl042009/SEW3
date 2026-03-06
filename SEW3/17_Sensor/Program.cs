@@ -37,6 +37,10 @@ bool ValidatingTemperature(double value)
 
 void TemperatureChanged(double obj, Sensor sender)
 {
+
+
+
+
     Console.WriteLine($"Neue Temperatur {obj} auf Sensor: {sender.SensorName} ");
 }
 
@@ -45,3 +49,4 @@ temp1.CurrentValue = 27.5;
 temp1.CurrentValue = 29.5;
 temp1.CurrentValue = 35.0;
 temp1.CurrentValue = 33.0;
+
