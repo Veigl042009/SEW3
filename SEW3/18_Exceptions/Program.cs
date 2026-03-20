@@ -1,4 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
+using _18_Exceptions;
+
 Console.WriteLine("Hello, World!");
 bool isDevelopment = true;
 
@@ -23,11 +25,25 @@ catch (FileNotFoundException ex) // spezifische Exception abfangen
     // hier treffen dann alle übrigen Exeptions ein
     Console.WriteLine("Hoppla da ist etwas schief gelaufen. Bitte wenden Sie sich an den Support.");
 }
-
-
-
-
-
+try
+{
+    MathUtils.ClaculateAverage(new List<int>()); // hier wird eine Exception ausgelöst, da die Liste leer ist
+}catch (Exception ex) // alle Exceptions abfangen
+{
+    Console.WriteLine($"Fehler bei der Berechnung des Durchschnitts: {ex.Message}");
+}
+List<int> list = new List<int>();
+for (int i = 0; i < 1000; i++)
+{
+    list.Add(i);
+}
+try
+{
+    MathUtils.ClaculateAverage(list); // hier wird eine Exception ausgelöst, da die Liste mehr als 100 Elemente enthält
+} catch (IT23Exception ex) // spezifische Exception abfangen
+{
+    Console.WriteLine("Das haben wir im Unterricht noch nicht gelernt.");
+}
 
 
 

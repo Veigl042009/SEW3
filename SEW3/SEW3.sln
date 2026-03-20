@@ -73,6 +73,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "17_Sensor", "17_Sensor\17_S
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "18_Exceptions", "18_Exceptions\18_Exceptions.csproj", "{42DBC2DB-0A04-4705-816E-E2E399E52273}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "19_UserManagement", "19_UserManagement\19_UserManagement.csproj", "{EEF803CD-AFE1-4103-8C6F-A932660E039B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Twenty_UserManagement", "Twenty_UserManagement\Twenty_UserManagement.csproj", "{372FFF71-C39C-42F4-B9AB-43B3AADA7CFE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -223,6 +227,14 @@ Global
 		{42DBC2DB-0A04-4705-816E-E2E399E52273}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{42DBC2DB-0A04-4705-816E-E2E399E52273}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{42DBC2DB-0A04-4705-816E-E2E399E52273}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EEF803CD-AFE1-4103-8C6F-A932660E039B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEF803CD-AFE1-4103-8C6F-A932660E039B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEF803CD-AFE1-4103-8C6F-A932660E039B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEF803CD-AFE1-4103-8C6F-A932660E039B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{372FFF71-C39C-42F4-B9AB-43B3AADA7CFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{372FFF71-C39C-42F4-B9AB-43B3AADA7CFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{372FFF71-C39C-42F4-B9AB-43B3AADA7CFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{372FFF71-C39C-42F4-B9AB-43B3AADA7CFE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
