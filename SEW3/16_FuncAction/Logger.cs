@@ -4,14 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _15_Delegates
+namespace _16_FuncAction
 {
     internal class Logger
     {
-        public delegate void LogHandler(string message, int priority);
+       // public delegate void LogHandler(string message, int priority);
+       // public event LogHandler? LogReceived;
 
-        public event LogHandler? LogReceived;
-        public event EventHandler? LogReceivedEH;
+        public event Action<string, int>? LogReceived; // Action Delegate, da void Rückgabewert und zwei Parameter
 
         public void AddLog(string message, int priority)
         {
@@ -20,14 +20,6 @@ namespace _15_Delegates
             {
                 LogReceived(message, priority); // Event mit den übergebenen Parametern auslösen
             }
-
-  
-            if (LogReceivedEH != null)
-            {
-                LogReceivedEH(this, new LogEventArgs(message, priority)); // Event mit den übergebenen Parametern auslösen
-            }
-
-
-        }
+        } 
     }
 }
